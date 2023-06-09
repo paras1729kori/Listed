@@ -9,11 +9,11 @@ type ScheduleData = {
   place: string;
 };
 
-const Schedule = () => {
+const Schedules = () => {
   const [schedules, setSchedules] = useState<Array<ScheduleData> | null>();
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3001/schedule");
+      const res = await fetch("http://localhost:3000/api/schedules");
       const data = await res.json();
       setSchedules(data);
     };
@@ -51,4 +51,4 @@ const Schedule = () => {
   );
 };
 
-export default Schedule;
+export default Schedules;

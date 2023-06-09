@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Cards from "./Cards";
 import LineChart from "./LineChart";
 import PieChart from "./PieChart";
-import Schedule from "./Schedule";
+import Schedules from "./Schedules";
 
 const Dashboard = () => {
   return (
@@ -12,7 +12,7 @@ const Dashboard = () => {
       <LineChart />
       <section className="flex flex-col gap-5 mt-5 justify-between md:flex-row md:gap-12 md:mt-10">
         <PieChart />
-        <Schedule />
+        <Schedules />
       </section>
     </div>
   );
