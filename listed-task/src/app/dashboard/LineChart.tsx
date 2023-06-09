@@ -51,7 +51,7 @@ const LineChart = () => {
   const [lineData, setLineData] = useState<ChartData<"line"> | null>(null);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/api/line");
+      const res = await fetch("/api/line");
       const data = await res.json();
       setLineData(data as ChartData<"line">);
     };

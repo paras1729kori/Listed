@@ -24,7 +24,7 @@ const PieChart = () => {
   const [pieData, setPieData] = useState<ChartData<"pie"> | null>(null);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:3000/api/pie");
+      const res = await fetch("/api/pie");
       const data = await res.json();
       setPieData(data as ChartData<"pie">);
     };
