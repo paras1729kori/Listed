@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "./Navbar";
 import Cards from "./Cards";
 import LineChart from "./LineChart";
